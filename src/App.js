@@ -12,6 +12,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Dashboard from './components/Delivery/Dashboard';
 import Profile from './components/Delivery/Profile';
+import ProfileClient from './components/ProfileC';
 
 function App() {
   // Vérification de l'URL actuelle
@@ -49,7 +50,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/restaurant/:id" element={<div className="p-5">Restaurant Details Page</div>} />
-          
+          <Route path="/profile" element={<ProfileClient />}/>
           {/* Routes pour le livreur */}
           <Route path="/deliveryHome" element={<Dashboard />} />
           <Route path="/deliveryProfile" element={<Profile />} />
