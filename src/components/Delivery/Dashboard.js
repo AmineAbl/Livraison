@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import '../../assets/css/SideBar.css';
 
 const Dashboard = () => {
   const [livraisons, setLivraisons] = useState([
@@ -20,7 +20,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 page-content">
       <h1 className="mb-4 text-center">Vos Livraisons</h1>
       <table className="table table-bordered">
         <thead>

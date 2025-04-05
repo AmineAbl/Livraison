@@ -1,0 +1,45 @@
+/* Initial narrow sidebar */
+.sidebar-container {
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+    z-index: 1000;
+    overflow-x: hidden;
+  }
+  
+  /* Expand sidebar on hover */
+  .sidebar-container:hover {
+    width: 280px;
+  }
+  
+  /* Hide text when collapsed */
+  .sidebar-container .logo-text,
+  .sidebar-container .nav-link span {
+    display: none;
+  }
+  
+  /* Show text on hover */
+  .sidebar-container:hover .logo-text,
+  .sidebar-container:hover .nav-link span {
+    display: inline;
+  }
+  
+  /* Center icons when collapsed */
+  .sidebar-container .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Align text left on hover */
+  .sidebar-container:hover .nav-link {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  
+  .page-content{
+    margin-left: 90px;
+  }

@@ -156,3 +156,8 @@
       margin: 10px 0;
     }
   }
+  .navbar-brand .logo-container img {
+    height: 10px; /* Ajustez la valeur en fonction de la hauteur de votre navbar */
+    width: auto;
+  }
+  

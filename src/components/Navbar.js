@@ -29,7 +29,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/">
+              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/home">
                 Home
               </NavLink>
             </li>
@@ -54,7 +54,7 @@ function Navbar() {
           <Link className="navbar-brand logo-container" to="/">
             <div className="logo-background">
               <div className="logo-circle"></div>
-              <div className="logo-text">Burger</div>
+              <div className="logo-text">FoodGo</div>
             </div>
           </Link>
 
@@ -72,8 +72,8 @@ function Navbar() {
             </li>
            
             <li className="nav-item">
-              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/login">
-                Login
+              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/">
+                Deconnexion
               </NavLink>
             </li>
             

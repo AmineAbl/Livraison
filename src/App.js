@@ -13,6 +13,8 @@ import SignUp from './components/SignUp';
 import Dashboard from './components/Delivery/Dashboard';
 import Profile from './components/Delivery/Profile';
 import ProfileClient from './components/ProfileC';
+import HomePage from './components/Home';
+import RestaurantDetails from './components/RestaurantDetail';
 
 function App() {
   // Vérification de l'URL actuelle
@@ -35,21 +37,21 @@ function App() {
 
         <Routes>
           {/* Routes pour le client */}
-          <Route path="/" element={
+          <Route path="/home" element={
             <>
               <div className="hero-section">
                 <h1>Welcome to Burger World</h1>
                 <p>Discover the best restaurants in town</p>
               </div>
-              <RestaurantCards />
+              <HomePage />
             </>
           } />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/restaurant/:id" element={<div className="p-5">Restaurant Details Page</div>} />
+          <Route path="/restaurant/:id" element={<RestaurantDetails />} /> 
           <Route path="/profile" element={<ProfileClient />}/>
           {/* Routes pour le livreur */}
           <Route path="/deliveryHome" element={<Dashboard />} />
