@@ -73,9 +73,9 @@ function RestaurantCard({ restaurant }) {
           <p className="card-text">{restaurant.description}</p>
         </div>
         <div className="card-footer bg-white border-0">
-          <Link to={restaurant.link} className="btn btn-primary see-btn">
-            Voir Plus
-          </Link>
+        <Link to={`/restaurant/${restaurant.id}`} className="btn btn-primary see-btn">
+          Voir Plus
+        </Link>
         </div>
       </div>
     </div>

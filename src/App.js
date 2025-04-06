@@ -15,6 +15,7 @@ import Profile from './components/Delivery/Profile';
 import ProfileClient from './components/ProfileC';
 import HomePage from './components/Home';
 import RestaurantDetails from './components/RestaurantDetail';
+import RestaurantDetail from './components/RestaurantDetail';
 
 function App() {
   // Vérification de l'URL actuelle
@@ -51,7 +52,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/restaurant/:id" element={<RestaurantDetails />} /> 
+          <Route path="/restaurant/:id" element={<RestaurantDetail />} />
           <Route path="/profile" element={<ProfileClient />}/>
           {/* Routes pour le livreur */}
           <Route path="/deliveryHome" element={<Dashboard />} />
